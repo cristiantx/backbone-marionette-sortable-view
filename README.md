@@ -18,7 +18,7 @@ App.module('views', function(Views, App, Backbone, Marionette, $, _) {
 
   Views.SortableLi = Marionette.SortableItemView.extend({
     template: _.template('<img src="<%=posters.thumbnail%>" alt="" /> <h3 class="inliner"><%=title%></h3>'),
-    className: 'box padder'
+    className: 'box'
   });
 
   Views.SortableList = Marionette.SortableCollectionView.extend({
