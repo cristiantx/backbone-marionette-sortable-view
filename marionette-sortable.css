@@ -1,0 +1,50 @@
+[draggable=true] {
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+.sortable-view > li {
+  position: relative;
+  padding-left: 30px;
+}
+.sortable-view > li:after {
+  content: '';
+  position: absolute;
+  box-sizing: border-box;
+  left: 5px;
+  top: 10%;
+  height: 80%;
+  width: 6px;
+  border: 2px dotted rgba(0,0,0,0.1);
+  background: transparent;
+  cursor: move;
+}
+.sortable-view > li:hover:after {
+  border: 2px dotted rgba(0,0,0,0.3);
+}
+.sortable-view > li.over {
+  background-color: transparent;
+  border: 3px dotted rgba(0,0,0,0.3);
+}
+.sortable-view > li.over:after {
+  display: none;
+}
+.sortable-view > li.over > * {
+  visibility: hidden;
+}
+
+/* Used only in the example */
+.box {
+  padding: 15px;
+  background-color: white;
+  margin-bottom: 15px;
+}
+
+.box img {
+  margin-right: 15px;
+}
+
+.box h3 {
+  display: inline-block;
+}
