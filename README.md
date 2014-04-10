@@ -4,6 +4,10 @@ Backbone Marionette Sortable Collection View
 Use HTML5 drag and drop functionalities on collection views.
 
 
+Result
+------------
+![alt text](https://raw.githubusercontent.com/Acquisio/backbone-marionette-sortable-view/master/example/example.png "Example")
+
 Usage
 ------------
 
