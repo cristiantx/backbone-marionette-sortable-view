@@ -58,7 +58,7 @@ Marionette.SortableItemView = Marionette.ItemView.extend({
       collection.remove(parent.draggedModel);
       collection.add(parent.draggedModel, { at: currentIndex });
 
-      collection.trigger('drop', this.parent.draggedModel);
+      this.trigger('drop', this.parent.draggedModel);
     }
 
 });
@@ -72,8 +72,13 @@ Marionette.SortableCollectionView = Marionette.CollectionView.extend({
 
   overClass: 'over',
 
-  collectionEvents: {
-    'drop': 'onDropItem'
+  childEvents: {
+    'itemview:drop': 'onDropItem'
+  },
+
+  delegateEvents: function(events) {
+    Marionette.View.prototype.delegateEvents.call(this, events);
+    Marionette.bindEntityEvents(this, this, Marionette.getOption(this, 'childEvents'));
   },
 
   buildItemView: function(item, ItemViewType, itemViewOptions){
@@ -97,8 +102,7 @@ Marionette.SortableCollectionView = Marionette.CollectionView.extend({
   },
 
   onDropItem: function(model) {
-    console.log('DROPPED ITEM');
+    console.log('DROPPED ITEM', model);
   }
-
 
 });
