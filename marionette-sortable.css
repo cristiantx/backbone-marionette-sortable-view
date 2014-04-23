@@ -33,18 +33,3 @@
 .sortable-view > li.over > * {
   visibility: hidden;
 }
-
-/* Used only in the example */
-.box {
-  padding: 15px;
-  background-color: white;
-  margin-bottom: 15px;
-}
-
-.box img {
-  margin-right: 15px;
-}
-
-.box h3 {
-  display: inline-block;
-}
