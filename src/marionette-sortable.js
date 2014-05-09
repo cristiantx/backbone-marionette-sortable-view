@@ -1,4 +1,4 @@
-Marionette.SortableItemView = Marionette.ItemView.extend({
+Marionette.Sortable.ItemView = Marionette.ItemView.extend({
     tagName: "li",
 
     attributes: {
@@ -63,7 +63,7 @@ Marionette.SortableItemView = Marionette.ItemView.extend({
 
 });
 
-Marionette.SortableCollectionView = Marionette.CollectionView.extend({
+Marionette.Sortable.CollectionView = Marionette.CollectionView.extend({
 
   tagName: 'ul',
   className: 'sortable-view',
