@@ -1,0 +1,31 @@
+{
+  "name": "backbone-marionette-sortable-view",
+  "version": "0.1.0",
+  "homepage": "https://github.com/cristiantx/backbone-marionette-sortable-view",
+  "authors": [
+    "maxmx"
+  ],
+  "description": "A marionette sortable collection that supports HTML5 Drag and Drop",
+  "main": "marionette-sortable.js",
+  "moduleType": [
+    "amd",
+    "global"
+  ],
+  "keywords": [
+    "backbone",
+    "marionette",
+    "sortable",
+    "drag",
+    "and",
+    "drop",
+    "html5"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
